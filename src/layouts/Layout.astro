@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 import logo from  '../assets/LG999-Bet-Game.webp';
 import Header from '../components/Header.astro';
 // import Footer from '../components/Footer.astro';
@@ -38,16 +39,14 @@ const canonical = new URL(Astro.url.pathname, "https://lg999bet.com").href;
     }
     </script>
 
-   <style is:global>
-  @import "../styles/global.css";
-
-  html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: system-ui, -apple-system, sans-serif;
-  }
-</style>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+    </style>
   </head>
 
   <body>
