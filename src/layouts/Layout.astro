@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import logo from  '../assets/LG999-Bet-Game.webp';
 import Header from '../components/Header.astro';
-// import Footer from '../components/Footer.astro';
+import Footer from '../components/Footer.astro';
 
 interface Props {
   title: string;
@@ -52,7 +52,7 @@ const canonical = new URL(Astro.url.pathname, "https://lg999bet.com").href;
   <body>
     <Header />
     <slot />
-    <!-- <Footer /> -->
+    <Footer />
 
     <!-- <script>
       document.addEventListener('contextmenu', (e) => {

@@ -6,16 +6,16 @@ import logo from '../assets/LG999-Bet-Game.webp';
 
 
 const navLinks = [
-  { label: 'HOME', href: '#' },
-  { label: 'DOWNLOAD', href: '#' },
-  { label: 'BLOG', href: '#' },
+  { label: 'HOME', href: '/' },
+  { label: 'DOWNLOAD', href: '/download' },
+  { label: 'About Us', href: '/about-us' },
 ];
 ---
 
 <header class="bg-[#2D3748] border-b border-[#1a252f]">
   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo -->
-    <div class="flex items-center gap-2">
+    <a href="/" class="flex items-center gap-2">
       <Image
         src={logo}
         alt="LG999 Logo"
@@ -27,7 +27,7 @@ const navLinks = [
         decoding="sync"
       />
       <span class="text-white text-2xl font-bold">LG 999</span>
-    </div>
+    </a>
 
     <!-- Navigation Links - Hidden on mobile -->
     <div class="hidden md:flex items-center gap-8">
