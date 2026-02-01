@@ -17,13 +17,14 @@ const navLinks = [
   <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     <!-- Logo -->
     <div class="flex items-center gap-2">
-      <Image
+        <Image
         src={logo} 
         alt="LG 999 Logo" 
         class="h-14 w-auto"
         width={56} 
         height={56}
-        fetchpriority="low"
+        loading="eager"
+        fetchpriority="high"
       />
       <span class="text-white text-2xl font-bold">LG 999</span>
     </div>
